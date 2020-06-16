@@ -1,1 +1,125 @@
 Hello World!
+  
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
+}
+.category-container { /* block with category list and promotion1*/
+    background-color: lightblue;	/* for testing kub*/
+	display:flex;
+	flex-direction: row;
+	padding: 100px;
+	justify-content:center;
+}
+.category-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 3px solid #555;
+}
+
+.categorykub {
+    text-align: center;
+    border-bottom: 3px solid #555;
+}
+.categorykub:last-child {
+    border-bottom: none;
+}
+.categorykub a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.categorykub .active {
+    background-color: #4CAF50;
+    color: white;
+}
+.categorykub a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.promotion1 {
+    border: 3px solid #555;
+	border-left : 0;
+}
+
+
+.item-container {
+	background-color: lightblue;	/* for testing kub*/
+	padding: 40px;
+	border-top: 1px solid #555;
+}
+.product-container { /* block with category list and promotion1*/
+    background-color: lightblue;	/* for testing kub*/
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.product-item {
+	background-color: #f8f9fa; /* for testing kub*/
+	padding: 10px;	/* inner space from border see color red*/
+	margin: 20px;	/* outer space from border see color lighskyblue dai*/
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.product-item a { color: inherit; } 
+.product-item a:hover { color: blue; } 
+</style>
+</head>
+<body>
+
+	
+<div class="category-container" >
+	<ul class="category-list">
+	  <li class="categorykub"><a class="active" href="#Category1">Category1</a></li>
+	  <li class="categorykub"><a href="#Category2">Category2</a></li>
+	  <li class="categorykub"><a href="#Category3">Category3</a></li>
+	  <li class="categorykub"><a href="#Category4">Category4</a></li>
+	</ul>
+	<img class="promotion1" src="logo.jpg" width="150" height="150">
+</div>
+
+
+<div class="item-container" >
+
+  <span style="font-size:40px; color:black">Items</span>
+  <div class="product-container">
+  
+  	<div class="product-item">
+	<a href="product.html?id=1">
+	<img src="product1.png" width="150" height="150">
+	<p>iPhone XS</p>
+	</a>
+	</div>
+	  
+  	<div class="product-item">
+	<a href="product.html?id=2">
+	<img src="product2.png" width="150" height="150">
+	<p>Apple Watch Series 4</p>
+	</a>
+	</div>
+	  
+  	<div class="product-item">
+	<a href="product.html?id=3">
+	<img src="product3.png" width="150" height="150">
+	<p>iPad Pro 10.5</p>
+	</a>
+	</div>
+
+	  
+	
+  </div>
+</div>
+
+</body>
+</html>
