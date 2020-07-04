@@ -1,0 +1,53 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    background: #4e5052;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-size: 14px;
+    color: #39464e;
+}
+
+dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+
+#loader {
+    position: absolute;
+    top: calc(50vh - 30px);
+    left: calc(50% - 60px);
+}
+
+#loader .loader{
+    width: 120px;
+    height: 120px;
+    z-index: 100;
+    animation: jump .8s ease-in infinite;
+}
+#loader .loader .cloud{
+    fill:#0084ff;
+}
+
+#loader .loader path{stroke:#fff;}
+#loader .shadow{
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+    left: 0;
+    display: block;
+    border-radius: 100%;
+    height: 20px;
+    width: 120px;
+    background: #000;
+    opacity: .3;
+    animation: scale-shadow .8s ease-in infinite;
+}
+@keyframes jump{
+    0%{transform:translateY(0) scale(1.15,.8)}
+    20%{transform:translateY(-35px) scaleY(1.1)}
+    50%{transform:translateY(-50px) scale(1)}
+    80%{transform:translateY(-35px) scale(1)}
+    to{transform:translateY(0) scale(1.15,.8)}}
+@keyframes scale-shadow{
+    0%{opacity:.3;transform:scale(1)}
+    50%{opacity:.2;transform:scale(.5)}
+    to{opacity:.3;transform:scale(1)}
+}
