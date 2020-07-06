@@ -28,15 +28,39 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
+
+.wrapper-intro{
+
+}
+
 .intro .intro-hello {
     font-size: 3rem;
     margin-bottom: 50px;
 }
+.intro-icon-decoration{
+    /* float:right; */
+    font-size: 128px;
+    /* margin-right: 200px; */
+    padding-left: 100px;
+}
 
 .intro_body {
-    max-width: 1000px;
+    /* max-width: 1000px; */
+    display: flex;
     font-weight: 300;
+}
+
+
+a{
+    text-decoration: none;
+    letter-spacing: 0.1em;
+
+}
+
+a:not(.email):hover {
+    text-decoration: underline;
 }
 
 .email {
@@ -82,15 +106,16 @@ section div.header{
     border-right :3px solid black;
 }
 
-.aboutme {
-    
-}
-
 
 .project-container {
     padding-bottom: 20px;
     margin-bottom: 40px;
     border-bottom :1px solid black;
+}
+
+.project-container:last-of-type{
+    border-bottom: none;
+
 }
 
 .vertical-img{
@@ -108,4 +133,8 @@ section div.header{
 
 .project-name{
     letter-spacing: 1px;
+}
+
+.footer{
+
 }
