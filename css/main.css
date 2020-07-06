@@ -138,3 +138,29 @@ section div.header{
 .footer{
 
 }
+
+
+
+
+
+.has-popup{
+    position: relative;
+}
+
+.has-popup .popup{
+    display: none;
+}
+
+.has-popup:hover .popup{
+    display: flex;
+    top: 40px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 185px;
+    background: #f0a90f;
+    color: #ffffff;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    z-index: 10;
+}
